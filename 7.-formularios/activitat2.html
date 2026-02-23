@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelicules</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulari</legend>
+            <label>
+            Modelo:
+            <select name="model">
+                <option value="0">R4</option>
+                <option value="1">R5</option>
+                <option value="2">SR1</option>
+            </select>
+            </label>
+            <br>
+
+            <label>
+            Potencia máxima (50-100):
+            <input type="range" name="potencia max" min="50" max="100">
+            </label>
+            <br>
+
+            <label>
+            ¿Blootooth?
+            <select name="blootooth">
+                <option value="0">Si</option>
+                <option value="1">No</option>
+            </select>
+            </label>
+            <br>
+
+            <label>
+            Color
+            <input type="color" name="color">
+            </label>
+            <br>
+    <button type="submit">Enviar</button>
+    </fieldset>
+</body>
+</html>
