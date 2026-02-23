@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulari de contacte</title>
+    <title>Registrar-se</title>
 </head>
 <body>
     <fieldset>
         <legend>Formulari</legend>
             <label>
-            Nom
+            Nom d'usuari
             <input type="text" name="nom">
             </label>
             <br>
@@ -19,8 +19,14 @@
             </label>
             <br>
             <label>
-            Missatge
-            <input type="text" name="missatge">
+            Edat
+            <select name="model">
+                <option value="0">12-14</option>
+                <option value="1">15-17</option>
+                <option value="2">18-20</option>
+                <option value="3">21-26</option>
+                <option value="4">26+</option>
+            </select>
             </label>
             <br>
     <button type="submit">Enviar</button>
