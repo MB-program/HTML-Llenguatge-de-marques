@@ -1,0 +1,125 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+
+  /* Fons decoratiu */
+  background:linear-gradient(135deg,#f5f7ff,#e8ecff);
+  color:#222;
+}
+
+/* colors */
+
+body::before{
+  content:"";
+  position:fixed;
+  width:400px;
+  height:400px;
+  background:#00b7ff;
+  border-radius:50%;
+  top:-150px;
+  right:-150px;
+  opacity:0.2;
+}
+
+/* header */
+
+header{
+  text-align:center;
+  padding:100px 20px;
+}
+
+h1{
+  font-size:3rem;
+}
+
+/* seccions */
+
+section{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* grid */
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* tarjetes */
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  text-align:center;
+
+  transition: all 0.3s ease;
+}
+
+/* icons */
+
+.icon{
+  font-size:30px;
+  margin-bottom:10px;
+  color:#63c6ff;
+}
+
+.icon{
+  font-size:35px;
+  margin-top:10px;
+  color:#63c6ff;
+}
+
+/* hover */
+
+a:hover{
+  color:#63a1ff;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.02);
+  background:#63c3ff;
+  color:rgb(8, 34, 90);
+}
+
+.card:hover .icon{
+  color:white;
+}
+
+/* titols */
+
+h2{
+  margin-bottom:20px;
+}
+
+/* peu de pàgina */
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#222;
+  color:white;
+}
+
+/* animació d'entrada */
+
+header, section{
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
